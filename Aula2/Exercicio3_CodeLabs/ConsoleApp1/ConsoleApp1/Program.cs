@@ -50,14 +50,14 @@ namespace Exercicio3_CodeLabs
                             Console.WriteLine("Digite a nota do aluno:");
                             nota = Convert.ToDouble(Console.ReadLine());
 
-                            if (nota < 0.0 || nota > 10.0)
+                            if (nota < 0.0 || nota >= 10.0)
                             {
                                 Console.WriteLine("Nota inválida, digite uma nota válida:");
                             }
                             else
                             {
                                 notas[i] = nota;
-                                Console.WriteLine($"Aluno {alunos[i]},nota {notas[i]},cadastrado com sucesso!!!");
+                                Console.WriteLine($"Aluno(a) {alunos[i]},nota {notas[i]},cadastrado com sucesso!!!");
                                 validacao = false;
                                
                             }
