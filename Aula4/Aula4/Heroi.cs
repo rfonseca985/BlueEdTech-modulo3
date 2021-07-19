@@ -9,16 +9,18 @@ namespace Aula4
     class Heroi
     {
         public int nivel { get; set; }
+        public string classe { get; set; }
         public int vida { get; set; }
         public string nome { get; set; }
         public int xp { get; set; }
         public int ataqueBase { get; set; }
         public int ataque { get; set; }
 
-        public Heroi(string nome)
+        public Heroi(string nome, string classe)
         {
             Random aleatorio = new Random();
             this.nome = nome;
+            this.classe = classe;
             this.ataqueBase = aleatorio.Next(1, 11);
             this.ataque = this.ataqueBase;
             this.vida = 10;
