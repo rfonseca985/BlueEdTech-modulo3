@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">O número da sorte é: @Model.numeroDaSorte</h1>
+</div>
+@if(Model.numeroDaSorte > 70)
+{
+<div class="text-center">
+    <h3>Você está com muita sorte hoje!!!</h3>
+</div>
+}

@@ -1,0 +1,24 @@
+﻿@page
+@model HelloWorld.Pages.Produtos.CreateModel
+@{
+}
+
+<h2>Novo produto:</h2>
+
+<form>
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="nome">
+    </div>
+    <div class="mb-3">
+        <label for="preco" class="form-label">Preço:</label>
+        <input type="text" class="form-control" id="preco">
+    </div>
+    <div class="mb-3">
+        <label for="descricao" class="form-label">Descrição:</label>
+        <input type="text" class="form-control" id="descricao">
+    </div>
+    
+    <a class="btn btn-info" asp-page="/Produtos/Sucesso">Criar</a>
+    <a class="btn btn-link" asp-page="/Produtos/Index">Voltar</a>
+</form>

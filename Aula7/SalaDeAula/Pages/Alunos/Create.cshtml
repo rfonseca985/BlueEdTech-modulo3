@@ -1,0 +1,30 @@
+﻿@page
+@model SalaDeAula.Pages.Alunos.createModel
+@{
+}
+
+Cadastar Alunos:
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="validationCustom01" value="Nome" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Data de nascimento:</label>
+        <input type="text" class="form-control" id="validationCustom01" value="00/00/0000" required>
+        <div class="valid-feedback">
+            Looks good!
+        </div>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Criar</button>
+        
+    </div>
+    
+    <p><a asp-page="/Alunos/Index">Voltar</a></p>
+</form>

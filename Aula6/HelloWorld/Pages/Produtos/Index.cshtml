@@ -1,0 +1,23 @@
+﻿@page
+@using HelloWorld.Models;
+@model HelloWorld.Pages.Produtos.IndexModel
+@{
+}
+
+<h1>Lista de produtos</h1>
+
+<p><a asp-page="/Produtos/Create">Novo produto!</a></p>
+<div class="row">
+    @foreach (Product prod in Model.produtos)
+    {
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@prod.Nome</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@prod.Preco</h6>
+                    <p class="card-text">@prod.Descricao</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
